@@ -3,8 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:89vw;
-    margin-left: 150px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
  
@@ -54,8 +52,18 @@
      font-weight: 700;
      transition: .3s ease all;
      text-decoration: none;
-     margin-bottom: 200px;
  }
+
+ @media (min-width: 1200px) {
+    .about-container {
+      width:89vw;
+      height: 123vh;
+      margin-left: 150px;
+    }
+    .button-cv {
+        margin-bottom: 200px;
+    }
+  }
  
  @media (max-width:600px) {
      .text-box {
@@ -64,6 +72,9 @@
          font-weight: 400;
          text-align: center;
      }
+     .button-cv {
+        margin-bottom: 100px;
+    }
    }
 
     

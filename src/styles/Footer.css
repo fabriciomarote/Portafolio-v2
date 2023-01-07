@@ -3,10 +3,6 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width:89vw;
-    margin-left: 150px;
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
   
   .text-footer {
@@ -30,6 +26,12 @@
   }
   
   @media (min-width: 1200px) {
+    .footer-container {
+      width:89vw;
+      margin-left: 150px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
     .col-sm{
       font-size: 15px;
       width: 100%;
@@ -38,7 +40,7 @@
   
   @media (max-width: 767px) {
     .col-sm{
-      font-size:10px;
+      font-size:11px;
       width: 100%;
     }
   }

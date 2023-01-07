@@ -5,6 +5,7 @@
     margin: 40px;
     overflow: hidden;
     border-radius: 20px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .project-container:hover .add-info {
@@ -16,13 +17,12 @@
 }
 
 .add-info {
-    position: absolute;
-    width: 360px;
+    position: sticky;
     bottom: 0;
     text-align: center;
     font-size: 18px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: #000000b3;
     padding: 20px;
     transform: translateY(100%);
     transition: all 0.5s ease-out;
@@ -87,7 +87,6 @@
 @media (min-width: 1200px) {
     .project-container {
         overflow: hidden;
-        position: relative;
     }
 }
 
@@ -100,5 +99,9 @@
     }
     .not-link1 {
         margin-right: -70px;
+    }
+    .project-container:hover .image-project{
+        transform: scale(1.07);
+        width: 360px;
     }
 }

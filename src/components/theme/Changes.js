@@ -8,17 +8,17 @@ export const ContainerGeneral = styled.div`
 
 export const NavBarContainer = styled.div`
     .navbar-container {
-        background-color: rgb(0, 0, 0, 0.6);
-        color: ${({ theme }) => theme.text};
+        background-color: ${({ theme }) => theme.bgcNavbar};
     }
     .nav > .nav-links > a {
-        color: #FFFFFF;
+        color: ${({ theme }) => theme.text};
     }
     .nav > .nav-links > a:hover {
         color: ${({ theme }) => theme.icon};
     } 
     .icon-theme {
         color: ${({ theme }) => theme.icon};
+        background-color: ${({ theme }) => theme.bgcNavbar}; 
     }
     #contact {
         background-color: ${({ theme }) => theme.icon};

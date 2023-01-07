@@ -46,12 +46,13 @@ const Navbar = (props) => {
                             <a href="#habilidades" className="btn-btn" >Habilidades</a>
                             <a href="#proyectos" className="btn-btn">Proyectos</a>
                             <a href="#contacto" className="btn-btn"> Contacto</a> 
-                        </div>
-                        <div className="theme">
+                            <div className="theme">
                             <div className='icon-theme' onClick={() => changeMode()}>
                                 { theme === "dark" ? <BsFillSunFill  className='icon-dark' size={35}/> : <BsFillMoonFill className='icon-light' size={35}/>}
                             </div>
                         </div>
+                        </div>
+                        
                     </div>
                 </div>  
             </NavBarContainer>

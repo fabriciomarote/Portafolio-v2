@@ -1,6 +1,4 @@
 .skills-container {
-    width:89vw;
-    margin-left: 150px;
     display: grid;
     flex-direction: row;
     justify-content: center;
@@ -13,8 +11,7 @@
     display: grid; 
     width: 50vw;
     align-items: center;
-    grid-template-columns: repeat(5, 1fr);
-    margin-bottom: 200px;
+    grid-template-columns: repeat(5, 1fr); 
     margin-top: 20px;
 }
 
@@ -35,14 +32,23 @@
     transform: scale(1.1);
 }
 
+@media (min-width: 1200px) {
+    .skills-container {
+        width:89vw;
+        margin-left: 150px;
+        margin-bottom: 0px;
+    }
+  }
+
 @media (max-width:600px) {
     .skills-container {
-        margin-top: -50px;
+        margin-top: 0px;
     }
     .box-icons {
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 100px;
-        margin-left: 25px;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 50px;
+        margin-left: -25px;
+        margin-bottom: 50px;
     }
     .icon {
         margin: 15px;
