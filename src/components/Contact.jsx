@@ -21,8 +21,9 @@ const Contact = ( props ) => {
     return (
         <ThemeProvider theme={Themes[theme]}>
             <ContactContainer>
+                <a name='contacto' />
                 <div className='contact-container'>
-                    <p className='text-contact'> Contactate conmigo</p>
+                    <p className='title-box'> CONTACTATE CONMIGO</p>
                     <div className='box-form'>
                         <form className='formModal'>
                             <label>Nombre:</label> 

@@ -1,6 +1,7 @@
   .home-container {
-    width:100%;
+    width:89vw;
     height: 100vh;
+    margin-left: 150px;
     display: grid;
     flex-direction: row;
     justify-content: center;

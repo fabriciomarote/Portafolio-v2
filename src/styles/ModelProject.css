@@ -3,7 +3,6 @@
     height: 500px;
     background-color: rgba(0, 0, 0, 0.3);
     margin: 40px;
-    position: relative;
     overflow: hidden;
     border-radius: 20px;
 }
@@ -18,15 +17,14 @@
 
 .add-info {
     position: absolute;
+    width: 360px;
     bottom: 0;
     text-align: center;
     font-size: 18px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rgb(0, 0, 0, 0.7);
     padding: 20px;
-
     transform: translateY(100%);
-
     transition: all 0.5s ease-out;
 }
 
@@ -84,6 +82,13 @@
 
 .not-link1 {
     margin-right: -100px;
+}
+
+@media (min-width: 1200px) {
+    .project-container {
+        overflow: hidden;
+        position: relative;
+    }
 }
 
 @media (max-width: 767px) {

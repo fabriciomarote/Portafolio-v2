@@ -13,6 +13,7 @@ const Proyects = ( props ) => {
     return (
         <ThemeProvider theme={Themes[theme]}>
             <ProjectsContainer>
+                <a name='proyectos'/>
                 <div className='projects-box-container'>
                     <div className='title-box'>
                         <p>MIS PROYECTOS</p>

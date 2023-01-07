@@ -15,13 +15,13 @@ export const NavBarContainer = styled.div`
         color: #FFFFFF;
     }
     .nav > .nav-links > a:hover {
-        color: ${({ theme }) => theme.hover};
+        color: ${({ theme }) => theme.icon};
     } 
     .icon-theme {
         color: ${({ theme }) => theme.icon};
     }
     #contact {
-        background-color: ${({ theme }) => theme.hover};
+        background-color: ${({ theme }) => theme.icon};
     }
     #contact:hover {
         color: #ffffff;
@@ -41,6 +41,7 @@ export const NavBarContainer = styled.div`
     }
     .icon-theme {
         color: ${({ theme }) => theme.icon};
+        background-color: ${({ theme }) => theme.bgc}; 
     }
   }
 `;
@@ -51,7 +52,7 @@ export const HomeContainer = styled.div`
         color: ${({ theme }) => theme.text};
     }
     .span1 {
-        color: ${({ theme }) => theme.hover};
+        color: ${({ theme }) => theme.icon};
     }
 `;
 
@@ -59,12 +60,12 @@ export const AboutMeContainer = styled.div`
     background-color: ${({ theme }) => theme.bgc};
     color: ${({ theme }) => theme.text};
     .button-cv {
-     color: #fff;
-     background-color: ${({ theme }) => theme.hover};
+        color: #fff;
+        background-color: ${({ theme }) => theme.icon};
     }
     .button-cv:hover {
-     background-color:#fff;
-     color: ${({ theme }) => theme.hover};
+        background-color:#000;
+        color: #fff;
     }
 `;
 
@@ -78,10 +79,10 @@ export const FooterContainer = styled.div`
         color: ${({ theme }) => theme.text};
     }
     .icon-f {
-        color: ${({ theme }) => theme.hover};
+        color: ${({ theme }) => theme.icon};
     }
     .icon-f:hover {
-        color: #ffffff
+        color: ${({ theme }) => theme.hover};
     }
 `;
 export const ContactContainer = styled.div`
@@ -89,12 +90,12 @@ export const ContactContainer = styled.div`
     color: ${({ theme }) => theme.text};
     .box-form {
         background-color: ${({ theme }) => theme.formContact};
-        color: #ffffff
+        color: ${({ theme }) => theme.text};
     }
     .btn-info {
-        border-color: ${({ theme }) => theme.hover};
+        border-color: ${({ theme }) => theme.icon};
         color: #fff;
-        background-color: ${({ theme }) => theme.hover};
+        background-color: ${({ theme }) => theme.icon};
     }
     .btn-info:hover {
         background-color:#000;
@@ -116,10 +117,10 @@ export const SkillsContainer = styled.div`
         color: ${({ theme }) => theme.text};
     }
     .icon {
-        color: ${({ theme }) => theme.hover};
+        color: ${({ theme }) => theme.icon};
     }
     .icon:hover {
-        color: #fff;
+        color: ${({ theme }) => theme.hover};
     }
     .title-box {
         color: ${({ theme }) => theme.text};

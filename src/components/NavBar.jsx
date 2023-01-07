@@ -2,8 +2,7 @@ import React from "react";
 import { BsFillSunFill, BsFillMoonFill } from "react-icons/bs";
 import { ThemeProvider } from 'styled-components';
 import { NavBarContainer } from "./theme/Changes";
-import logo1 from '../assets/img/logo-dark.png';
-import logo2 from '../assets/img/logo-light.png';
+import logo from '../assets/img/logo-dark.png';
 import Themes from './theme/Themes'
 import '../styles/NavBar.css';
 
@@ -23,8 +22,6 @@ const Navbar = (props) => {
         localStorage.setItem('theme', colour);
     }
 
-    const logo = (theme === 'light') ? logo2 : logo1;
-
     return (
         <ThemeProvider theme={Themes[theme]}>
             <NavBarContainer>
@@ -43,15 +40,17 @@ const Navbar = (props) => {
                                 <span></span>
                             </label>
                         </div>
-                        <div className="nav-links">
+                        <div className="nav-links"> 
+                            <a href="#inicio" className="btn-btn" >Inicio</a>
+                            <a href="#sobreMi" className="btn-btn" >Sobre mí</a>
+                            <a href="#habilidades" className="btn-btn" >Habilidades</a>
+                            <a href="#proyectos" className="btn-btn">Proyectos</a>
+                            <a href="#contacto" className="btn-btn"> Contacto</a> 
+                        </div>
+                        <div className="theme">
                             <div className='icon-theme' onClick={() => changeMode()}>
-                                { theme === "dark" ? <BsFillSunFill  className='icon-dark' size={30}/> : <BsFillMoonFill className='icon-light' size={30}/>}
+                                { theme === "dark" ? <BsFillSunFill  className='icon-dark' size={35}/> : <BsFillMoonFill className='icon-light' size={35}/>}
                             </div>
-                            <a href="/" className="btn-btn" >Inicio</a>
-                            <a href="/about" className="btn-btn" >Sobre mí</a>
-                            <a href="/skills" className="btn-btn" >Habilidades</a>
-                            <a href="/projects" className="btn-btn">Proyectos</a>
-                            <a href="/contact" className="btn-btn" id='contact'> Contacto</a> 
                         </div>
                     </div>
                 </div>  

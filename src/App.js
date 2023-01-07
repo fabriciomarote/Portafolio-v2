@@ -21,11 +21,11 @@ function App() {
               <div className="navbar">
                 <NavBar theme={theme} setTheme={setTheme}/>
               </div> 
-              <Home path="/" theme={theme} setTheme={setTheme}/>
-              <AboutMe path="/about" theme={theme} setTheme={setTheme}/>
+              <Home theme={theme} setTheme={setTheme}/>
+              <AboutMe theme={theme} setTheme={setTheme}/>
               <Skills theme={theme} setTheme={setTheme}/>
               <Projects theme={theme} setTheme={setTheme}/>
-              <Contact theme={theme} setTheme={setTheme}/>
+              <Contact  theme={theme} setTheme={setTheme}/>
               <Footer theme={theme} setTheme={setTheme}/> 
           </ContainerGeneral>
         </ThemeProvider>

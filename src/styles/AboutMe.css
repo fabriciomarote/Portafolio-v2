@@ -3,23 +3,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:100%;
-    min-height: 100vh;
-    line-height: 50px;
+    width:89vw;
+    margin-left: 150px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    scrollbar-color: brown;
  }
  
  .box-title {
-     margin: 40px;
-     font-size: 25px;
+     margin: 50px;
  }
  
  .foto {
      width: 220px;
      height: 220px;
      border-radius: 50%;
-     box-shadow: 30px;
+     margin-top: 20px;
  }
  
  .box-info {
@@ -36,7 +33,7 @@
      align-items: center;
      text-align: center;
      width: 70%;
-     font-size: 30px;
+     font-size: 25px;
      font-weight: 600;
      line-height: 40px;
      margin-bottom: 50px;
@@ -57,7 +54,7 @@
      font-weight: 700;
      transition: .3s ease all;
      text-decoration: none;
-     margin-bottom: 40px;
+     margin-bottom: 200px;
  }
  
  @media (max-width:600px) {

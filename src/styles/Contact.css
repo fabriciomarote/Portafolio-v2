@@ -1,6 +1,7 @@
 .contact-container {
-    width: 100%;
-    min-height: 80vh;
+    width:89vw;
+    height: 90vh;
+    margin-left: 150px;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -8,16 +9,13 @@
     font-family: 'Arial Narrow Bold', sans-serif;
 }
 
-.text-contact {
-    font-size: 50px;
-}
-
 .box-form {
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 350px;
     padding: 50px;
     border-radius: 10px;
     justify-content: center;
+    margin-top: 0px;
 }
 
 .formModal{

@@ -12,15 +12,16 @@ const AboutMe = ( props ) => {
     return (
         <ThemeProvider theme={Themes[theme]}>
             <AboutMeContainer>
+            <a name='sobreMi' />
             <div className='about-container'>
-                <div className='box-title'>
-                    <h1>SOBRE MÍ</h1>
+                <div className='title-box'>
+                    <p>SOBRE MÍ</p>
                 </div> 
                 <div className='box-image'>
                     <img className='foto' src={foto} alt="logo" />
                 </div> 
                 <div className='text-box'>    
-                    <p>Soy un estudiante de la carrera de Licenciatura en Informática de la Universidad Nacional de Quilmes. Durante mi carrera he desarrollado varios proyectos utilizando diferentes lenguajes y tecnologías, tengo experiencia y un buen manejo en lo que respecta al trabajo en equipo, además he trabajado y tengo conocimientos sobre las metodologías ágiles (SCRUM). Me he interesado y especializado además de forma autodidacta en el desarrollo de aplicaciones web con JavaScript para el frontend y Kotlin para el backend. Aprendí a trabajar con distintas tecnologías como HTML, CSS, React, SQL, Javalin, Spring Boot entre otras. He trabajado también con Java, Node.js, Express, MongoDB y Neo4j.</p>
+                    <p>Soy un estudiante de la carrera de Licenciatura en Informática de la Universidad Nacional de Quilmes. Durante mi carrera he desarrollado varios proyectos utilizando diferentes lenguajes y tecnologías, tengo experiencia y un buen manejo en lo que respecta al trabajo en equipo, además he trabajado y tengo conocimientos sobre las metodologías ágiles (SCRUM). Me he interesado y especializado además de forma autodidacta en el desarrollo de aplicaciones web.</p>
                 </div>
                 <div className='box-cv'>
                     <a href="https://drive.google.com/file/d/1OrfC8WAUbFl8Q8cNExuSAC7sUr38Dyzm/view?usp=sharing" className='button-cv'>Visualizar mi CV</a> 

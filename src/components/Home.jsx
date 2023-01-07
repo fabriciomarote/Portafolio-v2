@@ -12,6 +12,7 @@ const Home = ( props ) => {
     return (
         <ThemeProvider theme={Themes[theme]}>
             <HomeContainer>
+            <a name='inicio' />
             <div className='home-container'>
                 <div className='box-home'>
                         <span>Hola,</span>
